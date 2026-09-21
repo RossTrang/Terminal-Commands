@@ -29,7 +29,7 @@
 			},
 			"Display formatted tables": {
 				"description": "Display tabulated data by specifying delimiter",
-				"code": "cat /etc/passwd | column -t -s ":""
+				"code": "cat /etc/passwd | column -t -s ':'"
 			},
 			"Entry": {
 				"description": "description",
@@ -43,7 +43,7 @@
 			},
 			"tac": {
 				"description": "cat backwards - useful for checking logs",
-				"code": "tac <file>",
+				"code": "tac <file>"
 			},
 			"Wrap long lines of text": {
 				"description": "Wrap long text output at specified character count.",
@@ -53,13 +53,13 @@
 				"description": "Displays output to terminal and writes to piped file.",
 				"code": "la | tee <output>.txt"
 			},
-			"Jq": {
+			"JSON files": {
 				"description": "Format JSON output",
 				"code": "curl -s <website> | jq"
 			},
 			"Compare sorted files": {
 				"description": "Column 1 & 2 show unique entries. Column 3 lists unique.",
-				"code": "comm <file1> <file2>",
+				"code": "comm <file1> <file2>"
 			},
 			"Disk Usage/Free": {
 				"description": "Overview of mounted devices, partitions, and total disk space.",
