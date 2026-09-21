@@ -1,0 +1,114 @@
+{
+	"name": "Terminal",
+	"description": "Useful Commands and Time-savers",
+	"author": "RossTrang",
+	"email": "",
+	"repository": "https://github.com/RossTrang/Terminal Commands",
+	"version": "0.1",
+	"sections": {
+		"Time-Savers": {
+			"Sudo last command": {
+				"description": "Forgot to prefix command with sudo?",
+				"code": "Sudo !!"
+			},
+			"TLDR": {
+				"description": "Concise simplified man pages",
+				"code": "tldr <command>"
+			},
+			"Fuzzy Search": {
+				"description": "Quickly search through command history, files, and processes.",
+				"code": "<command with output> | fzf"
+			},
+			"Recursive searching (ripgrep)": {
+				"description": "Useful for searching code repos",
+				"code": "rg 'pattern'"
+			},
+			"One-off job scheduling": {
+				"description": "Simple one-off cron stand-in",
+				"code": "echo <command> | at <date/time>"
+			},
+			"Display formatted tables": {
+				"description": "Display tabulated data by specifying delimiter",
+				"code": "cat /etc/passwd | column -t -s ":""
+			},
+			"Entry": {
+				"description": "description",
+				"code": "command"
+			}
+		},
+		"Useful Tools": {
+			"BatCat": {
+				"description": "Syntax highlighting and line numbers in output",
+				"code": "batcat <file>"
+			},
+			"tac": {
+				"description": "cat backwards - useful for checking logs",
+				"code": "tac <file>",
+			},
+			"Wrap long lines of text": {
+				"description": "Wrap long text output at specified character count.",
+				"code": "<command with output> | fold -w <char value>"
+			},
+			"Display & write output simultaneously": {
+				"description": "Displays output to terminal and writes to piped file.",
+				"code": "la | tee <output>.txt"
+			},
+			"Jq": {
+				"description": "Format JSON output",
+				"code": "curl -s <website> | jq"
+			},
+			"Compare sorted files": {
+				"description": "Column 1 & 2 show unique entries. Column 3 lists unique.",
+				"code": "comm <file1> <file2>",
+			},
+			"Disk Usage/Free": {
+				"description": "Overview of mounted devices, partitions, and total disk space.",
+				"code": "duf"
+			},
+			"Disk Usage Hogging": {
+				"description": "Navigable breakdown of disk usage culprits.",
+				"code": "ncdu <dir-to-scan>"
+			},
+			"Monitor changes": {
+				"description": "Monitor realtime changes by repeating command.",
+				"code": "watch -n 2 ss -tunap"
+			},
+			"Freeze / Unfreeze output": {
+				"description": "Halt listings or screen updates",
+				"code": "Ctrl + S / Ctrl + U"
+			},
+			"Record terminal": {
+				"description": "Records output to a text file. Use Exit to end.",
+				"code": "script <file-name>.log"
+			},
+			"Entry": {
+				"description": "description",
+				"code": "command"
+			}
+		},
+		"Typos": {
+			"Delete everything before/after the cursor": {
+				"description": "Remove chunks of commands",
+				"code": "Ctrl + U / Ctrl + K"
+			},
+			"Delete/Paste 1 word": {
+				"description": "Cut the previous word / paste in previous space",
+				"code": "Ctrl + W / Ctrl + Y"
+			},
+			"Undo": {
+				"description": "Undo last typing action",
+				"code": "Ctrl + Shift + _ (underscore)"
+			},
+			"Edit command in text editor": {
+				"description": "Opens the selected command in Nano and executes on exit.",
+				"code": "Ctrl + X >> Ctrl + E"
+			}
+		},
+		"Section Title": {
+			"Entry": {
+				"description": "description",
+				"code": "command"
+			}
+		}	
+	}
+}
